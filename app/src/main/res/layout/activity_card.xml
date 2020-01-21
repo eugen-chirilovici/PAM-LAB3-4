@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_app_bar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/activity_card_image"
+                android:layout_width="318dp"
+                android:layout_height="450dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/test_card" />
+
+            <ImageView
+                android:id="@+id/activity_card_placeholder"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/pokeball_animation_loop"
+                app:layout_constraintBottom_toBottomOf="@id/activity_card_image"
+                app:layout_constraintEnd_toEndOf="@id/activity_card_image"
+                app:layout_constraintStart_toStartOf="@id/activity_card_image"
+                app:layout_constraintTop_toTopOf="@id/activity_card_image" />
+
+            <LinearLayout
+                android:id="@+id/activity_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/type_dragon"
+                android:paddingStart="25dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="2dp"
+                app:layout_constraintEnd_toEndOf="@+id/activity_card_image"
+                app:layout_constraintStart_toStartOf="@+id/activity_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/activity_card_image">
+
+                <TextView
+                    android:id="@+id/activity_card_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pixel_font"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:text="Type" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/card_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/card_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <include layout="@layout/card_activity_action_bar" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

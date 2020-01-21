@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/ic_pokeball_0"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_45"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_90"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_135"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_180"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_225"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_270"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_315"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ic_pokeball_0"
+        android:duration="100" />
+
+</animation-list>
